@@ -10,5 +10,5 @@ interface JugadorRepository {
 
     suspend fun saveJugador(jugador: Jugador): Resource<Jugador>
 
-    suspend fun updateJugador(id: Int, jugador: Jugador): Resource<Jugador>
+    suspend fun updateJugador(id: Int, jugador: Jugador): Resource<Unit>
 }
